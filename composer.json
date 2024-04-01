@@ -1,0 +1,19 @@
+{
+    "name": "fivejars/drupal_starterkit",
+    "description": "FiveJars StarterKit distribution",
+    "version": "dev-master",
+    "type": "drupal-profile",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=8.2",
+        "composer/installers": "^2.2",
+        "drupal/admin_toolbar": "^3.4",
+        "drupal/gin": "^3.0@RC",
+        "drupal/gin_toolbar": "^1.0@RC"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "installer-name": "starterkit"
+    }
+}

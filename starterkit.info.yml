@@ -1,0 +1,20 @@
+name: StarterKit
+type: profile
+description: 'FiveJars StarterKit'
+core_version_requirement: ~10
+distribution:
+  name: StarterKit
+
+install:
+  - system
+  - action
+  - user
+  - node
+  - block
+  - page_cache
+  - dynamic_page_cache
+  - admin_toolbar
+  - gin_toolbar
+themes:
+  - gin
+  - olivero
