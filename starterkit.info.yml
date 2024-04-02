@@ -15,6 +15,13 @@ install:
   - dynamic_page_cache
   - admin_toolbar
   - gin_toolbar
+  - google_tag
+  - metatag
+  - redirect
+  - site_verify
+  - sitemap
+  - yoast_seo
+  - pathauto
 themes:
   - gin
   - olivero
