@@ -27,6 +27,15 @@ install:
   - password_policy
   - password_policy_characters
   - password_policy_length
+  - ckeditor_media_embed
+  - dropzonejs
+  - entity_browser
+  - focal_point
+  - imageapi_optimize
+  - media
+  - media_bulk_upload
+  - media_directories
+  - media_library
 themes:
   - gin
   - olivero
