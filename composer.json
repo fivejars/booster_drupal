@@ -1,9 +1,9 @@
 {
     "name": "fivejars/drupal_starterkit",
     "description": "FiveJars StarterKit distribution",
-    "license": "GPL-2.0-or-later",
-    "type": "drupal-profile",
     "version": "dev-master",
+    "type": "drupal-profile",
+    "license": "GPL-2.0-or-later",
     "repositories": {
         "dropzone": {
             "type": "package",
@@ -24,7 +24,6 @@
         "drupal/admin_toolbar": "^3.4",
         "drupal/ckeditor_media_embed": "^2.0@alpha",
         "drupal/dropzonejs": "^2.10",
-        "drupal/entity_browser": "^2.10",
         "drupal/focal_point": "^2.0",
         "drupal/gin": "^3.0@RC",
         "drupal/gin_toolbar": "^1.0@RC",
