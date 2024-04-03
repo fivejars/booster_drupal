@@ -44,7 +44,8 @@
         "drupal/simple_recaptcha": "^1.0@beta",
         "drupal/site_verify": "^2.0@alpha",
         "drupal/sitemap": "^2.0@beta",
-        "drupal/yoast_seo": "^2.0@alpha"
+        "drupal/yoast_seo": "^2.0@alpha",
+        "drupal/webform": "^6.2"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
