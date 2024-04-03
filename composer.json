@@ -17,7 +17,7 @@
         "drupal/redirect": "^1.9",
         "drupal/site_verify": "^2.0@alpha",
         "drupal/sitemap": "^2.0@beta",
-        "drupal/yoast_seo": "^1.8"
+        "drupal/yoast_seo": "^2.0@alpha"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
