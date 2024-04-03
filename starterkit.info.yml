@@ -22,6 +22,11 @@ install:
   - sitemap
   - yoast_seo
   - pathauto
+  - seckit
+  - simple_recaptcha
+  - password_policy
+  - password_policy_characters
+  - password_policy_length
 themes:
   - gin
   - olivero
