@@ -31,6 +31,11 @@ pipeline {
               sh 'echo "DISTRIBUTION_VERSION=\"$CHANGE_BRANCH\"" >> .docksal/docksal-local.env'
           }
       }
+      stage('pre-build') {
+        steps {
+          sh 'fin p rm -f || true'
+        }
+      }
       stage('build') {
           steps {
               sh 'fin build_project'
