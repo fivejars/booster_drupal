@@ -41,6 +41,7 @@ install:
   - scheduler
   - entity_clone
   - content_moderation
+  - webform
 themes:
   - gin
   - olivero
