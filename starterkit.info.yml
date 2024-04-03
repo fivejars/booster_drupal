@@ -36,6 +36,11 @@ install:
   - media_bulk_upload
   - media_directories
   - media_library
+  - admin_audit_trail
+  - workflows
+  - scheduler
+  - entity_clone
+  - content_moderation
 themes:
   - gin
   - olivero
