@@ -1,9 +1,9 @@
 {
     "name": "fivejars/drupal_starterkit",
     "description": "FiveJars StarterKit distribution",
-    "version": "dev-master",
-    "type": "drupal-profile",
     "license": "GPL-2.0-or-later",
+    "type": "drupal-profile",
+    "version": "dev-master",
     "require": {
         "php": ">=8.2",
         "composer/installers": "^2.2",
@@ -13,8 +13,11 @@
         "drupal/google_analytics": "^4.0",
         "drupal/google_tag": "^2.0",
         "drupal/metatag": "^2.0",
+        "drupal/password_policy": "^4.0",
         "drupal/pathauto": "^1.12",
         "drupal/redirect": "^1.9",
+        "drupal/seckit": "^2.0",
+        "drupal/simple_recaptcha": "^1.0@beta",
         "drupal/site_verify": "^2.0@alpha",
         "drupal/sitemap": "^2.0@beta",
         "drupal/yoast_seo": "^2.0@alpha"
