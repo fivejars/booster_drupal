@@ -42,6 +42,7 @@ install:
   - entity_clone
   - content_moderation
   - webform
+  - webform_ui
 themes:
   - gin
   - olivero
