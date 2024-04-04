@@ -24,6 +24,7 @@ install:
   - google_tag
   - imageapi_optimize
   - layout_builder
+  - layout_builder_blocks
   - masquerade
   - media
   - media_bulk_upload
