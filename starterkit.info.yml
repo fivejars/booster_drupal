@@ -25,6 +25,7 @@ install:
   - imageapi_optimize
   - layout_builder
   - layout_builder_blocks
+  - layout_builder_styles
   - masquerade
   - media
   - media_bulk_upload
