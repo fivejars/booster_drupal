@@ -34,6 +34,7 @@
         "drupal/redirect": "^1.9",
         "drupal/redis": "^1.7",
         "drupal/scheduler": "^2.0",
+        "drupal/section_library": "^1.1",
         "drupal/seckit": "^2.0",
         "drupal/simple_recaptcha": "^1.0@beta",
         "drupal/site_verify": "^2.0@alpha",

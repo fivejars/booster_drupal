@@ -39,6 +39,7 @@ install:
   - pathauto
   - redirect
   - scheduler
+  - section_library
   - seckit
   - simple_recaptcha
   - site_verify
