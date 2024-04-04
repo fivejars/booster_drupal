@@ -23,6 +23,7 @@ install:
   - gin_toolbar
   - google_tag
   - imageapi_optimize
+  - layout_builder
   - masquerade
   - media
   - media_bulk_upload
