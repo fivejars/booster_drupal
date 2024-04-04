@@ -10,6 +10,7 @@ install:
   - admin_audit_trail
   - admin_toolbar
   - block
+  - block_content
   - ckeditor_media_embed
   - config_ignore
   - config_split
@@ -30,6 +31,7 @@ install:
   - media
   - media_bulk_upload
   - media_directories
+  - media_directories_ui
   - media_library
   - metatag
   - node
