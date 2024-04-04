@@ -1,0 +1,11 @@
+uuid: ac5fa148-a148-47d3-a7a5-0f1ddd91eaf5
+langcode: en
+status: true
+dependencies: {  }
+id: text_block
+block_id: 'inline_block:basic'
+category: basic_blocks
+label: 'Text Block'
+image_path: ''
+image_alt: ''
+weight: null

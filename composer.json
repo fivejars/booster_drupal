@@ -7,6 +7,7 @@
     "require": {
         "php": ">=8.2",
         "composer/installers": "^2.2",
+        "cweagans/composer-patches": "^1.5.0",
         "drupal/admin_audit_trail": "^1.0",
         "drupal/admin_toolbar": "^3.4",
         "drupal/ckeditor_media_embed": "^2.0@alpha",
@@ -28,6 +29,7 @@
         "drupal/layout_builder_styles": "^2.0",
         "drupal/layout_builder_lock": "^1.4",
         "drupal/masquerade": "^2.0@RC",
+        "drupal/layout_builder_browser": "^1.6",
         "drupal/media_bulk_upload": "^3.0",
         "drupal/media_directories": "^2.1@beta",
         "drupal/memcache": "^2.5",
@@ -63,6 +65,17 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
-        "installer-name": "starterkit"
+        "installer-name": "starterkit",
+        "patches": {
+            "drupal/layout_builder_browser": {
+                "3351131 - Block links displaying inline in off-canvas list": "https://www.drupal.org/files/issues/2023-05-03/3351131-6.patch"
+            }
+        },
+        "enable-patching": true
+    },
+    "config": {
+        "allow-plugins": {
+            "cweagans/composer-patches": true
+        }
     }
 }
