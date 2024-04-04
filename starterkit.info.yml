@@ -30,6 +30,7 @@ install:
   - layout_builder_styles
   - layout_library
   - masquerade
+  - layout_builder_browser
   - media
   - media_bulk_upload
   - media_directories

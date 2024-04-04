@@ -1,0 +1,11 @@
+uuid: a2851bd4-230d-4222-aeff-d1fa131814a3
+langcode: en
+status: true
+dependencies: {  }
+id: image_block
+block_id: 'inline_block:image_block'
+category: basic_blocks
+label: 'Image block'
+image_path: ''
+image_alt: ''
+weight: null
