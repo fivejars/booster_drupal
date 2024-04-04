@@ -6,43 +6,49 @@ distribution:
   name: StarterKit
 
 install:
-  - system
   - action
-  - user
-  - node
-  - block
-  - page_cache
-  - dynamic_page_cache
+  - admin_audit_trail
   - admin_toolbar
+  - block
+  - ckeditor_media_embed
+  - config_ignore
+  - config_split
+  - content_moderation
+  - dropzonejs
+  - dynamic_page_cache
+  - entity_browser
+  - entity_clone
+  - flood_control
+  - focal_point
   - gin_toolbar
   - google_tag
-  - metatag
-  - redirect
-  - site_verify
-  - sitemap
-  - yoast_seo
-  - pathauto
-  - seckit
-  - simple_recaptcha
-  - password_policy
-  - password_policy_characters
-  - password_policy_length
-  - ckeditor_media_embed
-  - dropzonejs
-  - entity_browser
-  - focal_point
   - imageapi_optimize
+  - masquerade
   - media
   - media_bulk_upload
   - media_directories
   - media_library
-  - admin_audit_trail
-  - workflows
+  - metatag
+  - node
+  - page_cache
+  - password_policy
+  - password_policy_characters
+  - password_policy_length
+  - pathauto
+  - redirect
   - scheduler
-  - entity_clone
-  - content_moderation
+  - seckit
+  - simple_recaptcha
+  - site_verify
+  - sitemap
+  - system
+  - ultimate_cron
+  - user
+  - views
   - webform
   - webform_ui
+  - workflows
+  - yoast_seo
 themes:
   - gin
   - olivero

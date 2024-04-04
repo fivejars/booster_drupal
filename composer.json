@@ -1,31 +1,21 @@
 {
     "name": "fivejars/drupal_starterkit",
     "description": "FiveJars StarterKit distribution",
-    "version": "dev-master",
-    "type": "drupal-profile",
     "license": "GPL-2.0-or-later",
-    "repositories": {
-        "dropzone": {
-            "type": "package",
-            "package": {
-                "name": "enyo/dropzone",
-                "version": "5.9.3",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://github.com/dropzone/dropzone/releases/download/v5.9.3/dist.zip",
-                    "type": "zip"
-                }
-            }
-        }
-    },
+    "type": "drupal-profile",
+    "version": "dev-master",
     "require": {
         "php": ">=8.2",
         "composer/installers": "^2.2",
         "drupal/admin_audit_trail": "^1.0",
         "drupal/admin_toolbar": "^3.4",
         "drupal/ckeditor_media_embed": "^2.0@alpha",
+        "drupal/config_ignore": "^3.2",
+        "drupal/config_split": "^2.0",
+        "drupal/default_content": "^2.0@alpha",
         "drupal/dropzonejs": "^2.10",
         "drupal/entity_clone": "^2.0@beta",
+        "drupal/flood_control": "^2.3",
         "drupal/focal_point": "^2.0",
         "drupal/gin": "^3.0@RC",
         "drupal/gin_toolbar": "^1.0@RC",
@@ -33,19 +23,37 @@
         "drupal/google_tag": "^2.0",
         "drupal/imageapi_optimize": "^4.0",
         "drupal/imagemagick": "^3.7",
+        "drupal/masquerade": "^2.0@RC",
         "drupal/media_bulk_upload": "^3.0",
         "drupal/media_directories": "^2.1@beta",
+        "drupal/memcache": "^2.5",
         "drupal/metatag": "^2.0",
         "drupal/password_policy": "^4.0",
         "drupal/pathauto": "^1.12",
         "drupal/redirect": "^1.9",
+        "drupal/redis": "^1.7",
         "drupal/scheduler": "^2.0",
         "drupal/seckit": "^2.0",
         "drupal/simple_recaptcha": "^1.0@beta",
         "drupal/site_verify": "^2.0@alpha",
         "drupal/sitemap": "^2.0@beta",
-        "drupal/yoast_seo": "^2.0@alpha",
-        "drupal/webform": "^6.2"
+        "drupal/ultimate_cron": "^2.0@alpha",
+        "drupal/webform": "^6.2",
+        "drupal/yoast_seo": "^2.0@alpha"
+    },
+    "repositories": {
+        "dropzone": {
+            "type": "package",
+            "package": {
+                "name": "enyo/dropzone",
+                "type": "drupal-library",
+                "version": "5.9.3",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/dropzone/dropzone/releases/download/v5.9.3/dist.zip"
+                }
+            }
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

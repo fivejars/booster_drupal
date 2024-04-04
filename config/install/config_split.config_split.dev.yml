@@ -1,0 +1,19 @@
+langcode: en
+status: false
+dependencies: {  }
+id: dev
+label: Dev
+description: 'Dev configuration that is used on demo, local and builds.'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/splits/dev
+module:
+  dblog: 0
+  field_ui: 0
+  update: 0
+  views_ui: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }
