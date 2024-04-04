@@ -25,6 +25,7 @@
         "drupal/imagemagick": "^3.7",
         "drupal/layout_builder_blocks": "^1.1",
         "drupal/layout_builder_styles": "^2.0",
+        "drupal/layout_builder_lock": "^1.4",
         "drupal/masquerade": "^2.0@RC",
         "drupal/media_bulk_upload": "^3.0",
         "drupal/media_directories": "^2.1@beta",
