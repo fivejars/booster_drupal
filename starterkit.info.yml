@@ -60,4 +60,5 @@ install:
   - yoast_seo
 themes:
   - gin
+  - thex
   - olivero
