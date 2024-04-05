@@ -15,6 +15,7 @@
         "drupal/config_split": "^2.0",
         "drupal/default_content": "^2.0@alpha",
         "drupal/dropzonejs": "^2.10",
+        "drupal/d8w3css": "^2.0",
         "drupal/entity_clone": "^2.0@beta",
         "drupal/flood_control": "^2.3",
         "drupal/focal_point": "^2.0",
