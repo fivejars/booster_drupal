@@ -13,25 +13,46 @@ settings:
       - bold
       - italic
       - strikethrough
+      - underline
       - superscript
       - subscript
+      - specialCharacters
       - removeFormat
       - '|'
-      - link
+      - heading
+      - style
+      - fontFamily
+      - fontSize
+      - fontColor
+      - fontBackgroundColor
+      - alignment
+      - direction
+      - '-'
+      - findAndReplace
+      - undo
+      - redo
       - '|'
       - bulletedList
       - numberedList
+      - indent
+      - outdent
       - '|'
+      - link
       - blockQuote
-      - drupalInsertImage
       - insertTable
+      - media_directories
+      - iframeEmbed
       - horizontalLine
-      - '|'
-      - heading
       - codeBlock
       - '|'
       - sourceEditing
   plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
     ckeditor5_codeBlock:
       languages:
         -
@@ -83,8 +104,6 @@ settings:
         - heading4
         - heading5
         - heading6
-    ckeditor5_imageResize:
-      allow_resize: true
     ckeditor5_list:
       properties:
         reversed: true
@@ -92,6 +111,50 @@ settings:
       multiBlock: true
     ckeditor5_sourceEditing:
       allowed_tags: {  }
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Style 1'
+          element: '<p class="style-1">'
+        -
+          label: 'Style 2'
+          element: '<p class="style-2">'
+    ckeditor_bidi_ckeditor5:
+      rtl_default: false
+    ckeditor_font_font:
+      supportAllSizeValues: false
+      supportAllFamilyValues: false
+      font_names: {  }
+      font_sizes:
+        -
+          title: Smail
+          model: 50%
+        -
+          title: Standard
+          model: 100%
+        -
+          title: Large
+          model: 150%
+    ckeditor_font_font_background_color:
+      font_backgroundcolors: "#000000|Black\r\n#ffffff|White"
+      columns: 5
+      documentColors: 0
+    ckeditor_font_font_color:
+      font_colors: "#000000|Black\r\n#ffffff|White"
+      columns: 5
+      documentColors: 0
+    ckeditor_iframe_embed_iframeembed:
+      enabled_optional_attributes:
+        - height
+        - width
+        - name
+        - tabindex
+        - title
+    editor_advanced_link_link:
+      enabled_attributes:
+        - target
+    media_media:
+      allow_view_mode_override: false
 image_upload:
   status: true
   scheme: public

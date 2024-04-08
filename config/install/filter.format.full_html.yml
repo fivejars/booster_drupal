@@ -2,18 +2,27 @@ langcode: en
 status: true
 dependencies:
   module:
+    - ckeditor_media_embed
     - editor
+    - entity_embed
+    - linkit
+    - media
+    - responsive_tables_filter
 name: 'Full HTML'
 format: full_html
 weight: 2
-roles:
-  - administrator
 filters:
   editor_file_reference:
     id: editor_file_reference
     provider: editor
     status: true
     weight: 11
+    settings: {  }
+  entity_embed:
+    id: entity_embed
+    provider: entity_embed
+    status: true
+    weight: 100
     settings: {  }
   filter_align:
     id: filter_align
@@ -27,6 +36,21 @@ filters:
     status: true
     weight: 9
     settings: {  }
+  filter_ckeditor_media_embed:
+    id: filter_ckeditor_media_embed
+    provider: ckeditor_media_embed
+    status: true
+    weight: 0
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<p class="style-1 style-2">'
+      filter_html_help: true
+      filter_html_nofollow: false
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter
@@ -39,3 +63,35 @@ filters:
     status: true
     weight: 15
     settings: {  }
+  filter_responsive_tables_filter:
+    id: filter_responsive_tables_filter
+    provider: responsive_tables_filter
+    status: true
+    weight: 0
+    settings:
+      tablesaw_type: stack
+      tablesaw_persist: '1'
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: 0
+    settings:
+      title: true
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes: {  }
+      allowed_media_types:
+        image: image
