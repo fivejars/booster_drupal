@@ -3,11 +3,13 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_seo_status
     - node.type.page
   module:
     - layout_builder
     - text
     - user
+    - yoast_seo
 third_party_settings:
   layout_builder:
     enabled: true
@@ -61,4 +63,5 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
-hidden: {  }
+hidden:
+  field_seo_status: true

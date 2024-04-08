@@ -1,0 +1,21 @@
+uuid: a83a4f3b-f03f-4f78-aac8-ac62904a7c35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seo_status
+    - node.type.page
+  module:
+    - yoast_seo
+id: node.page.field_seo_status
+field_name: field_seo_status
+entity_type: node
+bundle: page
+label: 'Seo status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo
