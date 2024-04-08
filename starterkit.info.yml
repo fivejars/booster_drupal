@@ -14,6 +14,10 @@ install:
   - block
   - block_content
   - checklistapi
+  - ckeditor_bidi
+  - ckeditor_find
+  - ckeditor_font
+  - ckeditor_iframe
   - ckeditor_media_embed
   - coffee
   - config
@@ -27,6 +31,7 @@ install:
   - editor_advanced_link
   - entity_browser
   - entity_clone
+  - entity_embed
   - filefield_paths
   - flood_control
   - focal_point
@@ -41,10 +46,12 @@ install:
   - layout_builder_lock
   - layout_builder_styles
   - layout_library
+  - linkit
   - masquerade
   - media
   - media_bulk_upload
   - media_directories
+  - media_directories_editor
   - media_directories_ui
   - media_library
   - metatag
@@ -55,6 +62,7 @@ install:
   - password_policy_length
   - pathauto
   - redirect
+  - responsive_tables_filter
   - robotstxt
   - scheduler
   - schema_metatag

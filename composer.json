@@ -12,6 +12,10 @@
         "drupal/admin_audit_trail": "^1.0",
         "drupal/admin_toolbar": "^3.4",
         "drupal/advagg": "^6.0@alpha",
+        "drupal/ckeditor_bidi": "^4.0",
+        "drupal/ckeditor_find": "^2.0@beta",
+        "drupal/ckeditor_font": "^2.0@beta",
+        "drupal/ckeditor_iframe": "^3.0@alpha",
         "drupal/ckeditor_media_embed": "^2.0@alpha",
         "drupal/coffee": "^1.2",
         "drupal/config_ignore": "^3.2",
@@ -39,6 +43,7 @@
         "drupal/layout_builder_lock": "^1.4",
         "drupal/layout_builder_styles": "^2.0",
         "drupal/layout_library": "^1.0@beta",
+        "drupal/linkit": "^6.1",
         "drupal/masquerade": "^2.0@RC",
         "drupal/media_bulk_upload": "^3.0",
         "drupal/media_directories": "^2.1@beta",
@@ -48,6 +53,7 @@
         "drupal/pathauto": "^1.12",
         "drupal/redirect": "^1.9",
         "drupal/redis": "^1.7",
+        "drupal/responsive_tables_filter": "^1.18",
         "drupal/robotstxt": "^1.4",
         "drupal/scheduler": "^2.0",
         "drupal/schema_metatag": "^3.0",
@@ -63,20 +69,6 @@
         "drupal/webform": "^6.2",
         "drupal/xmlsitemap": "^1.0",
         "drupal/yoast_seo": "^2.0@alpha"
-    },
-    "repositories": {
-        "dropzone": {
-            "type": "package",
-            "package": {
-                "name": "enyo/dropzone",
-                "type": "drupal-library",
-                "version": "5.9.3",
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/dropzone/dropzone/releases/download/v5.9.3/dist.zip"
-                }
-            }
-        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
