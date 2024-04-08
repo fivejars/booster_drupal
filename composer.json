@@ -8,29 +8,38 @@
         "php": ">=8.2",
         "composer/installers": "^2.2",
         "cweagans/composer-patches": "^1.5.0",
+        "drupal/addtoany": "^2.0",
         "drupal/admin_audit_trail": "^1.0",
         "drupal/admin_toolbar": "^3.4",
+        "drupal/advagg": "^6.0@alpha",
         "drupal/ckeditor_media_embed": "^2.0@alpha",
+        "drupal/coffee": "^1.2",
         "drupal/config_ignore": "^3.2",
         "drupal/config_split": "^2.0",
         "drupal/default_content": "^2.0@alpha",
+        "drupal/diff": "^1.0",
         "drupal/dropzonejs": "^2.10",
         "drupal/d8w3css": "^2.0",
+        "drupal/easy_breadcrumb": "^2.0",
+        "drupal/editor_advanced_link": "^2.1",
         "drupal/entity_clone": "^2.0@beta",
+        "drupal/filefield_paths": "^1.0@beta",
         "drupal/flood_control": "^2.3",
         "drupal/focal_point": "^2.0",
         "drupal/gin": "^3.0@RC",
         "drupal/gin_toolbar": "^1.0@RC",
         "drupal/google_analytics": "^4.0",
         "drupal/google_tag": "^2.0",
+        "drupal/honeypot": "^2.0",
+        "drupal/hreflang": "^1.4",
         "drupal/imageapi_optimize": "^4.0",
         "drupal/imagemagick": "^3.7",
-        "drupal/layout_library": "^1.0@beta",
         "drupal/layout_builder_blocks": "^1.1",
-        "drupal/layout_builder_styles": "^2.0",
-        "drupal/layout_builder_lock": "^1.4",
-        "drupal/masquerade": "^2.0@RC",
         "drupal/layout_builder_browser": "^1.6",
+        "drupal/layout_builder_lock": "^1.4",
+        "drupal/layout_builder_styles": "^2.0",
+        "drupal/layout_library": "^1.0@beta",
+        "drupal/masquerade": "^2.0@RC",
         "drupal/media_bulk_upload": "^3.0",
         "drupal/media_directories": "^2.1@beta",
         "drupal/memcache": "^2.5",
@@ -39,14 +48,20 @@
         "drupal/pathauto": "^1.12",
         "drupal/redirect": "^1.9",
         "drupal/redis": "^1.7",
+        "drupal/robotstxt": "^1.4",
         "drupal/scheduler": "^2.0",
-        "drupal/section_library": "^1.1",
+        "drupal/schema_metatag": "^3.0",
+        "drupal/search404": "^2.0",
         "drupal/seckit": "^2.0",
+        "drupal/section_library": "^1.1",
+        "drupal/security_review": "^2.0",
+        "drupal/seo_checklist": "^5.2",
         "drupal/simple_recaptcha": "^1.0@beta",
         "drupal/site_verify": "^2.0@alpha",
         "drupal/sitemap": "^2.0@beta",
         "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/webform": "^6.2",
+        "drupal/xmlsitemap": "^1.0",
         "drupal/yoast_seo": "^2.0@alpha"
     },
     "repositories": {
@@ -65,18 +80,18 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "cweagans/composer-patches": true
+        }
+    },
     "extra": {
+        "enable-patching": true,
         "installer-name": "starterkit",
         "patches": {
             "drupal/layout_builder_browser": {
                 "3351131 - Block links displaying inline in off-canvas list": "https://www.drupal.org/files/issues/2023-05-03/3351131-6.patch"
             }
-        },
-        "enable-patching": true
-    },
-    "config": {
-        "allow-plugins": {
-            "cweagans/composer-patches": true
         }
     }
 }
