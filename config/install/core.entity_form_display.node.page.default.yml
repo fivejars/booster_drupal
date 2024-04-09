@@ -7,7 +7,9 @@ dependencies:
     - field.field.node.page.field_seo_status
     - field.field.node.page.layout_builder__layout
     - node.type.page
+    - workflows.workflow.default
   module:
+    - content_moderation
     - metatag
     - path
     - scheduler
@@ -51,6 +53,12 @@ content:
       edit_description: false
       render_theme: null
       render_view_mode: default
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    region: content
+    settings: {  }
     third_party_settings: {  }
   path:
     type: path
