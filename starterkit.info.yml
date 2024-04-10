@@ -16,6 +16,7 @@ install:
   - checklistapi
   - ckeditor_media_embed
   - coffee
+  - config
   - config_ignore
   - config_split
   - content_moderation
