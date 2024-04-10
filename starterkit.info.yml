@@ -11,6 +11,7 @@ install:
   - admin_audit_trail
   - admin_toolbar
   - advagg
+  - better_exposed_filters
   - block
   - block_content
   - checklistapi
@@ -67,6 +68,8 @@ install:
   - scheduler
   - schema_metatag
   - search404
+  - search_api
+  - search_api_db
   - seckit
   - section_library
   - security_review
