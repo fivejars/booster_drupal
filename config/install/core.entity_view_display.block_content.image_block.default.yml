@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - block_content.type.image_block
-    - field.field.block_content.image_block.field_image
+    - field.field.block_content.image_block.field_media
   module:
     - media
 id: block_content.image_block.default
@@ -11,7 +11,7 @@ targetEntityType: block_content
 bundle: image_block
 mode: default
 content:
-  field_image:
+  field_media:
     type: media_thumbnail
     label: hidden
     settings:
@@ -20,6 +20,6 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden: {  }

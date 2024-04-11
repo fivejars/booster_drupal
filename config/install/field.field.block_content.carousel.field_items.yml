@@ -2,24 +2,24 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.image_block
-    - field.storage.block_content.field_image
-    - media.type.image
-id: block_content.image_block.field_image
-field_name: field_image
+    - block_content.type.carousel
+    - block_content.type.carousel_item
+    - field.storage.block_content.field_items
+id: block_content.carousel.field_items
+field_name: field_items
 entity_type: block_content
-bundle: image_block
-label: Image
+bundle: carousel
+label: Items
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:media'
+  handler: 'default:block_content'
   handler_settings:
     target_bundles:
-      image: image
+      carousel_item: carousel_item
     sort:
       field: _none
       direction: ASC
