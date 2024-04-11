@@ -38,6 +38,7 @@
         "drupal/hreflang": "^1.4",
         "drupal/imageapi_optimize": "^4.0",
         "drupal/imagemagick": "^3.7",
+        "drupal/inline_entity_form": "^3.0@RC",
         "drupal/layout_builder_blocks": "^1.1",
         "drupal/layout_builder_browser": "^1.6",
         "drupal/layout_builder_lock": "^1.4",

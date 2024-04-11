@@ -1,10 +1,10 @@
 langcode: en
 status: true
 dependencies: {  }
-id: image_block
-block_id: 'inline_block:image_block'
+id: webform
+block_id: 'inline_block:webform'
 category: basic_blocks
-label: 'Image block'
+label: Webform
 image_path: ''
 image_alt: ''
-weight: null
+weight: -100

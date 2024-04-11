@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: carousel_item
+label: 'Carousel item'
+revision: 0
+description: 'A sub-component for the Carousel component.'

@@ -40,6 +40,7 @@ install:
   - honeypot
   - hreflang
   - imageapi_optimize
+  - inline_entity_form
   - layout_builder
   - layout_builder_blocks
   - layout_builder_browser
