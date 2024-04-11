@@ -1,0 +1,9 @@
+name: 'StarterKit Layout Builder'
+type: module
+description: 'Provides specific overrides for Layout Builder.'
+package: FiveJars
+core_version_requirement: ^10
+dependencies:
+#  - gin_lb
+  - layout_builder_blocks
+#  - layout_builder_modal

@@ -1,11 +1,18 @@
 {
-  "name": "fivejars/drupal_starterkit",
-  "description": "FiveJars StarterKit distribution",
-  "version": "dev-master",
-  "type": "drupal-profile",
-  "license": "GPL-2.0-or-later",
   "repositories": {
-    "dropzone": {
+    "apvarun/toastify-js": {
+      "type": "package",
+      "package": {
+        "name": "apvarun/toastify-js",
+        "version": "v1.11.2",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://github.com/apvarun/toastify-js/archive/refs/tags/1.11.2.zip",
+          "type": "zip"
+        }
+      }
+    },
+    "enyo/dropzone": {
       "type": "package",
       "package": {
         "name": "enyo/dropzone",
@@ -19,6 +26,7 @@
     }
   },
   "require": {
+    "apvarun/toastify-js": "1.11.2",
     "enyo/dropzone": "^5.9"
   }
 }
