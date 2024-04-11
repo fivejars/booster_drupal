@@ -2,19 +2,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.image_block
+    - block_content.type.gallery
     - entity_browser.browser.media_directories_modal
-    - field.field.block_content.image_block.field_media
+    - field.field.block_content.gallery.field_medias
   module:
     - entity_browser
-id: block_content.image_block.default
+id: block_content.gallery.default
 targetEntityType: block_content
-bundle: image_block
+bundle: gallery
 mode: default
 content:
-  field_media:
+  field_medias:
     type: entity_browser_entity_reference
-    weight: 2
+    weight: 26
     region: content
     settings:
       entity_browser: media_directories_modal

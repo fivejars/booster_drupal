@@ -2,16 +2,36 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.image_block
+    - block_content.type.banner
     - entity_browser.browser.media_directories_modal
-    - field.field.block_content.image_block.field_media
+    - field.field.block_content.banner.field_cta_links
+    - field.field.block_content.banner.field_description
+    - field.field.block_content.banner.field_media
   module:
     - entity_browser
-id: block_content.image_block.default
+    - link
+    - text
+id: block_content.banner.default
 targetEntityType: block_content
-bundle: image_block
+bundle: banner
 mode: default
 content:
+  field_cta_links:
+    type: link_default
+    weight: 26
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_media:
     type: entity_browser_entity_reference
     weight: 2

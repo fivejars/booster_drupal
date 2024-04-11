@@ -2,19 +2,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.image_block
+    - block_content.type.video
     - entity_browser.browser.media_directories_modal
-    - field.field.block_content.image_block.field_media
+    - field.field.block_content.video.field_media
   module:
     - entity_browser
-id: block_content.image_block.default
+id: block_content.video.default
 targetEntityType: block_content
-bundle: image_block
+bundle: video
 mode: default
 content:
   field_media:
     type: entity_browser_entity_reference
-    weight: 2
+    weight: 0
     region: content
     settings:
       entity_browser: media_directories_modal
