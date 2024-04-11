@@ -69,6 +69,7 @@ install:
   - responsive_tables_filter
   - robotstxt
   - scheduler
+  - scheduler_content_moderation_integration
   - schema_metatag
   - sdc
   - search404
