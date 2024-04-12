@@ -10,6 +10,7 @@ pipeline {
   environment {
     VIRTUAL_HOST = "${BRANCH_NAME.toLowerCase()}.dskit.${VIRTUAL_HOST_BASE}"
     BUILD_URL = "http://${VIRTUAL_HOST}/"
+    DEFAULT_THEME = "drupal_starterkit_theme"
     COMMENT_URL = "https://api.github.com/repos/fivejars/drupal_starterkit/issues/${CHANGE_ID}/comments"
   }
   stages {
@@ -29,6 +30,7 @@ pipeline {
                   ]
               sh 'echo "VIRTUAL_HOST=\"$VIRTUAL_HOST\"" > .docksal/docksal-local.env'
               sh 'echo "DISTRIBUTION_VERSION=\"$CHANGE_BRANCH\"" >> .docksal/docksal-local.env'
+              sh 'echo "DEFAULT_THEME=\"$DEFAULT_THEME\"" >> .docksal/docksal-local.env'
           }
       }
       stage('pre-build') {

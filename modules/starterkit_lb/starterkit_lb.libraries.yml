@@ -1,0 +1,11 @@
+modal:
+  css:
+    theme:
+      css/starterkit_lb.offcanvas.css: {}
+      css/starterkit_lb.modal.css: {}
+
+form:
+  css:
+    theme:
+      css/starterkit_lb.offcanvas.css: {}
+      css/starterkit_lb.form.css: {}

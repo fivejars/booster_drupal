@@ -27,6 +27,7 @@
         "drupal/flood_control": "^2.3",
         "drupal/focal_point": "^2.0",
         "drupal/gin": "^3.0@RC",
+        "drupal/gin_lb": "^1.0@RC",
         "drupal/gin_toolbar": "^1.0@RC",
         "drupal/google_analytics": "^4.0",
         "drupal/google_tag": "^2.0",
@@ -64,20 +65,6 @@
         "drupal/webform": "^6.2",
         "drupal/xmlsitemap": "^1.0",
         "drupal/yoast_seo": "^2.0@alpha"
-    },
-    "repositories": {
-        "dropzone": {
-            "type": "package",
-            "package": {
-                "name": "enyo/dropzone",
-                "type": "drupal-library",
-                "version": "5.9.3",
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/dropzone/dropzone/releases/download/v5.9.3/dist.zip"
-                }
-            }
-        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

@@ -1,0 +1,75 @@
+#layout-builder-modal em {
+  background-color: inherit;
+  cursor: auto;
+}
+#layout-builder-modal .glb-form-item .description {
+  margin-top: 0.5em;
+}
+#layout-builder-modal .glb-form-wrapper .details-wrapper {
+  margin-top: 0.5em;
+}
+#layout-builder-modal label {
+  line-height: normal;
+}
+#layout-builder-modal .ck-source-editing-area textarea {
+  height: 100%;
+  border-radius: 0;
+  border-color: var(--gin-border-color-form-element);
+}
+#layout-builder-modal .fieldset .form-type--radio {
+  display: flex;
+  padding-left: 0;
+}
+#layout-builder-modal .fieldset .form-type--radio .form-radio {
+  box-shadow: none !important;
+  height: 21px;
+  margin-right: 8px;
+  width: 21px;
+}
+#layout-builder-modal .form-item-reusable .description {
+  display: block;
+}
+#layout-builder-modal .ief-entity-table.glb-table {
+  vertical-align: middle;
+}
+#layout-builder-modal .ief-entity-table.glb-table th {
+  background: var(--gin-bg-header);
+  padding: 1em;
+}
+#layout-builder-modal .ief-entity-table.glb-table td {
+  padding: 0;
+}
+#layout-builder-modal .ief-entity-table.glb-table .tabledrag-handle:after {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+#layout-builder-modal .ief-entity-table.glb-table .tabledrag-handle:hover:after {
+  background-color: var(--gin-color-primary);
+}
+#layout-builder-modal .glb-claro-details {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 25px !important;
+}
+#layout-builder-modal .glb-claro-details[open] > .glb-claro-details__summary:after {
+  opacity: 1 !important;
+  border: 3px solid var(--gin-color-primary) !important;
+  border-width: 0 0 0 3px !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+#layout-builder-modal .bs_tab-pane--appearance input.glb-button.button  {
+  width: auto;
+}
+#layout-builder-modal .bs_tab-pane--appearance input.glb-button.button:hover  {
+  animation: none;
+}
+#layout-builder-modal .bs_tab-pane--appearance details {
+  background-color: #383A40;
+}
+#layout-builder-modal .bs_tab-pane--appearance summary:after {
+  border-color: var(--gin-color-primary-light);
+}
+#layout-builder-modal .bs_tab-pane--appearance summary[aria-expanded='true']:after,
+#layout-builder-modal .bs_tab-pane--appearance summary:hover:after {
+  border-color: var(--gin-color-primary);
+}

@@ -1,9 +1,4 @@
 {
-  "name": "fivejars/drupal_starterkit",
-  "description": "FiveJars StarterKit distribution",
-  "version": "dev-master",
-  "type": "drupal-profile",
-  "license": "GPL-2.0-or-later",
   "repositories": {
     "dropzone": {
       "type": "package",

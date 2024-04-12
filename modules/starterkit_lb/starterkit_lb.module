@@ -1,0 +1,85 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Provides related to starterkit_lb module customization.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_theme_suggestions_alter().
+ */
+function starterkit_lb_theme_suggestions_alter(array &$suggestions, array $variables): void {
+  // If gin setup suggestions on Boostrap styles, remove them.
+  if (!isset($variables['element']['#gin_lb_form'])) {
+    return;
+  }
+
+  foreach ($suggestions as $suggestion) {
+    // Search bootstrap styles suggestions.
+    if (
+      str_contains($suggestion, '__bs')
+      || (str_contains($suggestion, 'label') && isset($variables['element']['#bs']))
+    ) {
+      $suggestions = preg_grep("/__gin_lb/", $suggestions, PREG_GREP_INVERT);
+      return;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_form_element().
+ */
+function starterkit_lb_preprocess_form_element(array &$variables): void {
+  // See bootstrap_styles_theme_suggestions_alter for the logic.
+  $parents = $variables['element']['#array_parents'] ?? FALSE;
+  $bs_parents = ['ui', 'tab_content', 'appearance', 'layout_settings'];
+
+  // UI/Tab content are expected, and one of appearance or layout settings.
+  if ($parents && count(array_intersect($bs_parents, $parents)) >= '3') {
+    // Pass a variable to the label to know it belongs to a BS form element.
+    $variables['label']['#bs'] = TRUE;
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function starterkit_lb_form_alter(array &$form, FormStateInterface $form_state, string $form_id): void {
+  // Add styles override to node LB form.
+  if (!empty($form['#theme']) && is_array($form['#theme']) && in_array('node_layout_builder_form', $form['#theme'])) {
+    $form['#attached']['library'][] = 'starterkit_lb/form';
+  }
+
+  if ($form_id === 'layout_builder_configure_section') {
+    $form['layout_settings']['#type'] = 'container';
+    $form['layout_settings']['#attributes']['class'][] = 'canvas-form__settings';
+  }
+
+  // LB Block configuration form.
+  if (!in_array($form_id, ['layout_builder_add_block', 'layout_builder_update_block'])) {
+    return;
+  }
+
+  $form['#attached']['library'][] = 'starterkit_lb/modal';
+
+  if (empty($form['ui']['tab_content']['appearance'])) {
+    return;
+  }
+
+  // Add submit button to the appearance tab.
+  $form['ui']['tab_content']['appearance']['actions'] = [
+      '#type' => 'container',
+      '#attributes' => ['class' => ['glb-canvas-form__actions js-form-wrapper glb-form-wrapper']],
+    ] + $form['actions'];
+
+  $form['ui']['tab_content']['appearance']['actions']['submit']['#attributes'] = [
+    'class' => [
+      'glb-button',
+      'glb-button--primary',
+    ],
+  ];
+}

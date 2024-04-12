@@ -1,0 +1,9 @@
+name: 'StarterKit Layout Builder'
+type: module
+description: 'Provides specific overrides for Layout Builder.'
+package: FiveJars
+core_version_requirement: ^10
+dependencies:
+  - 'drupal:gin_lb'
+  - 'drupal:layout_builder_blocks'
+  - 'drupal:layout_builder_modal'

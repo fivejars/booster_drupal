@@ -59,14 +59,17 @@ install:
   - robotstxt
   - scheduler
   - schema_metatag
+  - sdc
   - search404
   - seckit
   - section_library
   - security_review
   - seo_checklist
+  - serialization
   - simple_recaptcha
   - site_verify
   - sitemap
+  - starterkit_lb
   - system
   - ultimate_cron
   - user
