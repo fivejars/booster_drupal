@@ -69,6 +69,7 @@ install:
   - robotstxt
   - scheduler
   - schema_metatag
+  - sdc
   - search404
   - search_api
   - search_api_db
@@ -76,9 +77,11 @@ install:
   - section_library
   - security_review
   - seo_checklist
+  - serialization
   - simple_recaptcha
   - site_verify
   - sitemap
+  - starterkit_lb
   - system
   - ultimate_cron
   - user

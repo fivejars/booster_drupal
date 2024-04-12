@@ -32,6 +32,7 @@
         "drupal/flood_control": "^2.3",
         "drupal/focal_point": "^2.0",
         "drupal/gin": "^3.0@RC",
+        "drupal/gin_lb": "^1.0@RC",
         "drupal/gin_toolbar": "^1.0@RC",
         "drupal/google_analytics": "^4.0",
         "drupal/google_tag": "^2.0",
