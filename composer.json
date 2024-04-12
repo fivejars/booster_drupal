@@ -72,6 +72,7 @@
         "drupal/simple_recaptcha": "^1.0@beta",
         "drupal/site_verify": "^2.0@alpha",
         "drupal/sitemap": "^2.0@beta",
+        "drupal/tfa": "^1.6",
         "drupal/ultimate_cron": "^2.0@alpha",
         "drupal/webform": "^6.2",
         "drupal/xmlsitemap": "^1.0",
