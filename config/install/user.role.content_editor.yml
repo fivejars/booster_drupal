@@ -1,0 +1,117 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner
+    - block_content.type.basic
+    - block_content.type.carousel
+    - block_content.type.carousel_item
+    - block_content.type.gallery
+    - block_content.type.image_block
+    - block_content.type.video
+    - block_content.type.webform
+    - core.entity_view_display.node.page.default
+    - filter.format.basic_html
+    - filter.format.full_html
+    - media.type.document
+    - media.type.image
+    - media.type.video
+    - node.type.page
+    - taxonomy.vocabulary.media_directories
+    - workflows.workflow.default
+  module:
+    - block_content
+    - content_moderation
+    - contextual
+    - dropzonejs
+    - entity_browser
+    - entity_clone
+    - file
+    - filter
+    - honeypot
+    - layout_builder
+    - media
+    - media_directories_ui
+    - node
+    - path
+    - section_library
+    - sitemap
+    - system
+    - taxonomy
+    - toolbar
+    - yoast_seo
+id: content_editor
+label: Editor
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access media directories ui browser'
+  - 'access media_directories_editor_browser entity browser pages'
+  - 'access media_directories_modal entity browser pages'
+  - 'access media_directories_overview entity browser pages'
+  - 'access sitemap'
+  - 'access toolbar'
+  - 'add section library templates'
+  - 'bypass honeypot protection'
+  - 'clone block_content entity'
+  - 'clone file entity'
+  - 'clone media entity'
+  - 'clone node entity'
+  - 'clone path_alias entity'
+  - 'clone taxonomy_term entity'
+  - 'configure editable page node layout overrides'
+  - 'create and edit custom blocks'
+  - 'create banner block content'
+  - 'create basic block content'
+  - 'create carousel block content'
+  - 'create carousel_item block content'
+  - 'create document media'
+  - 'create gallery block content'
+  - 'create image media'
+  - 'create image_block block content'
+  - 'create media'
+  - 'create page content'
+  - 'create terms in media_directories'
+  - 'create url aliases'
+  - 'create video block content'
+  - 'create video media'
+  - 'create webform block content'
+  - 'delete media'
+  - 'delete own document media'
+  - 'delete own files'
+  - 'delete own image media'
+  - 'delete own page content'
+  - 'delete own video media'
+  - 'dropzone upload files'
+  - 'edit any banner block content'
+  - 'edit any basic block content'
+  - 'edit any carousel block content'
+  - 'edit any carousel_item block content'
+  - 'edit any gallery block content'
+  - 'edit any image_block block content'
+  - 'edit any video block content'
+  - 'edit any webform block content'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own page content'
+  - 'edit own video media'
+  - 'edit terms in media_directories'
+  - 'import template from section library'
+  - 'take_ownership_on_clone file entity'
+  - 'take_ownership_on_clone media entity'
+  - 'take_ownership_on_clone node entity'
+  - 'update media'
+  - 'use default transition create_new_draft'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use yoast seo'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view section library templates'
+  - 'view the administration theme'
