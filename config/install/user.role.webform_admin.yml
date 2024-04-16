@@ -1,0 +1,80 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.webform_default
+    - media.type.document
+    - media.type.image
+    - media.type.video
+  module:
+    - contextual
+    - dropzonejs
+    - entity_browser
+    - entity_clone
+    - file
+    - filter
+    - honeypot
+    - media
+    - media_directories_ui
+    - path
+    - system
+    - toolbar
+    - webform
+    - yoast_seo
+id: webform_admin
+label: 'Webform admin'
+weight: 3
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access any webform configuration'
+  - 'access contextual links'
+  - 'access media directories ui browser'
+  - 'access media_directories_editor_browser entity browser pages'
+  - 'access own webform configuration'
+  - 'access toolbar'
+  - 'access webform help'
+  - 'access webform overview'
+  - 'access webform submission user'
+  - 'administer webform element access'
+  - 'administer webform submission'
+  - 'bypass honeypot protection'
+  - 'clone webform entity'
+  - 'clone webform_options entity'
+  - 'clone webform_submission entity'
+  - 'create document media'
+  - 'create image media'
+  - 'create media'
+  - 'create url aliases'
+  - 'create video media'
+  - 'create webform'
+  - 'delete any webform'
+  - 'delete any webform submission'
+  - 'delete media'
+  - 'delete own document media'
+  - 'delete own files'
+  - 'delete own image media'
+  - 'delete own video media'
+  - 'delete own webform'
+  - 'delete own webform submission'
+  - 'dropzone upload files'
+  - 'edit any webform'
+  - 'edit any webform submission'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own video media'
+  - 'edit own webform'
+  - 'edit own webform submission'
+  - 'edit webform variants'
+  - 'update media'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format webform_default'
+  - 'use yoast seo'
+  - 'view any webform submission'
+  - 'view media'
+  - 'view own unpublished media'
+  - 'view own webform submission'
+  - 'view the administration theme'
