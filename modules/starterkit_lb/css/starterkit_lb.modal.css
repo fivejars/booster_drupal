@@ -73,3 +73,37 @@
 #layout-builder-modal .bs_tab-pane--appearance summary:hover:after {
   border-color: var(--gin-color-primary);
 }
+
+#layout-builder-modal table td {
+  color: var(--color-text);
+}
+
+#layout-builder-modal form .ck-content {
+  color: var(--color-text);
+}
+
+.entity-browser-iframe-container iframe {
+  height: 500px;
+}
+
+#layout-builder-modal:has( .bs_tab-pane--appearance.active) {
+  background-color: #383A40 !important;
+}
+
+#layout-builder-modal:has( .bs_tab-pane--appearance.active) .glb-canvas-form__actions {
+  background: transparent;
+}
+#layout-builder-modal:has( .bs_tab-pane--appearance.active) .glb-canvas-form__actions .glb-button {
+  box-shadow: unset !important;
+}
+
+#layout-builder-modal #bs_nav-tabs.bs_nav-tabs {
+  top: -25px;
+}
+#layout-builder-modal tr:hover td {
+  background: inherit;
+}
+
+#layout-builder-modal #bs_ui {
+  margin: -1.5rem 0;
+}
