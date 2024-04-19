@@ -106,6 +106,9 @@
             },
             "drupal/pdf_reader": {
                 "Issue #1293136: Percent instead of width and height": "https://www.drupal.org/files/issues/2024-04-22/1293136__6.patch"
+            },
+            "drupal/core": {
+                "3075236 - jQuery UI dialog modals repositions incorrectly on window resize when there is a off canvas rendered": "https://www.drupal.org/files/issues/2023-07-18/3075236-39.patch"
             }
         }
     }
