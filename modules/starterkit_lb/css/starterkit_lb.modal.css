@@ -107,3 +107,7 @@
 #layout-builder-modal #bs_ui {
   margin: -1.5rem 0;
 }
+#layout-builder-modal #bs_ui #bs_nav-tabs {
+  margin: 0 0 30px -45px;
+  width: calc(100% + 57px);
+}
