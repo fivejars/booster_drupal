@@ -53,18 +53,19 @@
         "drupal/media_directories": "^2.1@beta",
         "drupal/memcache": "^2.5",
         "drupal/metatag": "^2.0",
+        "drupal/openai": "^1.0@beta",
         "drupal/password_policy": "^4.0",
         "drupal/pathauto": "^1.12",
         "drupal/redirect": "^1.9",
         "drupal/redis": "^1.7",
         "drupal/responsive_tables_filter": "^1.18",
         "drupal/robotstxt": "^1.4",
-        "drupal/search_api": "^1.34",
-        "drupal/search_api_solr": "^4.3",
         "drupal/scheduler": "^2.0",
         "drupal/scheduler_content_moderation_integration": "^2.0@beta",
         "drupal/schema_metatag": "^3.0",
         "drupal/search404": "^2.0",
+        "drupal/search_api": "^1.34",
+        "drupal/search_api_solr": "^4.3",
         "drupal/seckit": "^2.0",
         "drupal/section_library": "^1.1",
         "drupal/security_review": "^2.0",
@@ -91,6 +92,9 @@
         "patches": {
             "drupal/layout_builder_browser": {
                 "Issue #3351131: Block links displaying inline in off-canvas list": "https://www.drupal.org/files/issues/2023-05-03/3351131-6.patch"
+            },
+            "drupal/openai": {
+                "Issue #3404972: OpenAI CKEditor - On error, content should not be replaced": "https://git.drupalcode.org/project/openai/-/merge_requests/77.patch"
             }
         }
     }
