@@ -60,6 +60,8 @@ install:
   - media_directories_ui
   - media_library
   - metatag
+  - openai
+  - openai_ckeditor
   - node
   - page_cache
   - password_policy
