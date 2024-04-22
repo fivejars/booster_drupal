@@ -90,7 +90,7 @@
         "installer-name": "starterkit",
         "patches": {
             "drupal/layout_builder_browser": {
-                "3351131 - Block links displaying inline in off-canvas list": "https://www.drupal.org/files/issues/2023-05-03/3351131-6.patch"
+                "Issue #3351131: Block links displaying inline in off-canvas list": "https://www.drupal.org/files/issues/2023-05-03/3351131-6.patch"
             }
         }
     }
