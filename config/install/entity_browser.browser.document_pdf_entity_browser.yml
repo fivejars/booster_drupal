@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_browser
+  module:
+    - views
+name: document_pdf_entity_browser
+label: 'Document PDF: Editor widget'
+display: iframe
+display_configuration:
+  width: 100%
+  height: '650'
+  link_text: 'Select PDF'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  ba84fab2-8b80-4b22-94fc-a64a59ed7570:
+    id: media_upload
+    uuid: ba84fab2-8b80-4b22-94fc-a64a59ed7570
+    label: Upload
+    weight: 1
+    settings:
+      media_type: document
+      submit_text: Select
+      upload_location: 'public://pdf/'
+      multiple: true
+      extensions: pdf
+  278de958-da5a-4179-bbc7-cbd95b9170b7:
+    id: view
+    uuid: 278de958-da5a-4179-bbc7-cbd95b9170b7
+    label: Browser
+    weight: 3
+    settings:
+      submit_text: Select
+      auto_select: false
+      view: media_browser
+      view_display: pdf

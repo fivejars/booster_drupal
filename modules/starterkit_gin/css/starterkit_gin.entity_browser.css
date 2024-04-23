@@ -1,0 +1,9 @@
+body.media-directories-modal.media-library-widget-modal {
+  overflow: hidden;
+}
+
+.gin-entity-browser .entity-browser-form .view-id-media_browser.view-display-id-pdf .views-row {
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}

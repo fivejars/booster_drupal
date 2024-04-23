@@ -1,0 +1,19 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Provides related to starterkit_gin module customization.
+ */
+
+/**
+ * Implements hook_library_info_alter().
+ */
+function starterkit_gin_library_info_alter(array &$libraries, string $extension) {
+  if ($extension !== 'gin') {
+    return;
+  }
+
+  $libraries['entity_browser']['dependencies'][] = 'starterkit_gin/entity_browser';
+}
