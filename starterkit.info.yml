@@ -99,5 +99,4 @@ install:
   - xmlsitemap
   - yoast_seo
 themes:
-  - drupal8_w3css_theme
   - gin
