@@ -40,7 +40,7 @@ settings:
       - link
       - blockQuote
       - insertTable
-      - media_directories
+      - drupalMedia
       - pdf
       - iframeEmbed
       - openai
@@ -48,7 +48,6 @@ settings:
       - codeBlock
       - '|'
       - sourceEditing
-      - drupalMedia
   plugins:
     ckeditor5_alignment:
       enabled_alignments:
