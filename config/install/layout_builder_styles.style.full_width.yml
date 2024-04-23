@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: full_width
+label: 'Full width'
+classes: full-width
+type: section
+group: default
+block_restrictions: {  }
+layout_restrictions:
+  - layout_onecol
+weight: 0
