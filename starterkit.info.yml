@@ -68,6 +68,7 @@ install:
   - password_policy_characters
   - password_policy_length
   - pathauto
+  - pdf_reader
   - redirect
   - responsive_tables_filter
   - robotstxt
@@ -86,6 +87,7 @@ install:
   - simple_recaptcha
   - site_verify
   - sitemap
+  - starterkit_gin
   - starterkit_lb
   - system
   - ultimate_cron

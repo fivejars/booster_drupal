@@ -56,6 +56,7 @@
         "drupal/openai": "^1.0@beta",
         "drupal/password_policy": "^4.0",
         "drupal/pathauto": "^1.12",
+        "drupal/pdf_reader": "^1.1",
         "drupal/redirect": "^1.9",
         "drupal/redis": "^1.7",
         "drupal/responsive_tables_filter": "^1.18",
@@ -90,11 +91,17 @@
         "enable-patching": true,
         "installer-name": "starterkit",
         "patches": {
+            "drupal/entity_browser": {
+                "Issue #2922885 by CHiLi.HH, oknate, l0ke: Provide upload widget for media of media type file": "https://www.drupal.org/files/issues/2019-02-28/entity_browser-media-file-upload-2922885-15.patch"
+            },
             "drupal/layout_builder_browser": {
                 "Issue #3351131: Block links displaying inline in off-canvas list": "https://www.drupal.org/files/issues/2023-05-03/3351131-6.patch"
             },
             "drupal/openai": {
                 "Issue #3404972: OpenAI CKEditor - On error, content should not be replaced": "https://git.drupalcode.org/project/openai/-/merge_requests/77.patch"
+            },
+            "drupal/pdf_reader": {
+                "Issue #1293136: Percent instead of width and height": "https://www.drupal.org/files/issues/2024-04-22/1293136__6.patch"
             }
         }
     }

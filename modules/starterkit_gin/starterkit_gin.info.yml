@@ -1,0 +1,7 @@
+name: 'StarterKit Gin'
+type: module
+description: 'Provides specific overrides for Gin theme.'
+package: FiveJars
+core_version_requirement: ^10
+dependencies:
+  - 'drupal:gin_lb'

@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.embed
+    - field.field.media.document.field_media_document
+    - media.type.document
+  module:
+    - layout_builder
+    - pdf_reader
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: media.document.embed
+targetEntityType: media
+bundle: document
+mode: embed
+content:
+  field_media_document:
+    type: FieldPdfReaderFields
+    label: visually_hidden
+    settings:
+      pdf_width: 100%
+      pdf_height: '780'
+      renderer: embed
+      embed_view_fit: Fit
+      embed_hide_toolbar: false
+      download: false
+      link_placement: top
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  addtoany: true
+  created: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true
