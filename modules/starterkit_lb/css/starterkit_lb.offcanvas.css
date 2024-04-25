@@ -29,3 +29,7 @@
   background-size: contain;
 }
 
+.ui-dialog-content .layout-builder-configure-section fieldset[data-drupal-selector="edit-layout-builder-style-default"] {
+  padding-right: 20px;
+  padding-left: 20px;
+}

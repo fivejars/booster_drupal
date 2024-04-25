@@ -89,6 +89,6 @@ function starterkit_lb_form_alter(array &$form, FormStateInterface $form_state, 
  */
 function starterkit_lb_preprocess_layout(&$variables) {
   if(empty($variables['settings']['layout_builder_styles_style']['full_width'])) {
-    $variables['attributes']['class'] = 'container';
+    $variables['attributes']['class'][] = 'container';
   }
 }
