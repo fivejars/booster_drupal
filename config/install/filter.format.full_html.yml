@@ -52,10 +52,10 @@ filters:
   filter_html:
     id: filter_html
     provider: filter
-    status: false
-    weight: -38
+    status: true
+    weight: -100
     settings:
-      allowed_html: '<p class="style-1 style-2">'
+      allowed_html: '<span style> <br> <p class="style-1 style-2 text-align-left text-align-center text-align-right text-align-justify"> <h2 class="text-align-left text-align-center text-align-right text-align-justify"> <h3 class="text-align-left text-align-center text-align-right text-align-justify"> <h4 class="text-align-left text-align-center text-align-right text-align-justify"> <h5 class="text-align-left text-align-center text-align-right text-align-justify"> <h6 class="text-align-left text-align-center text-align-right text-align-justify"> <strong> <em> <u> <pre class="text-align-left text-align-center text-align-right text-align-justify"> <code class="language-*"> <s> <sub> <sup> <blockquote> <a href target="_blank"> <ul> <ol reversed start> <li> <hr> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption> <drupal-media data-entity-type data-entity-uuid alt data-caption data-align data-media-width> <iframe src height width name tabindex title> <drupal-entity alt title data-align data-caption data-entity-embed-display data-entity-embed-display-settings data-view-mode data-entity-uuid data-langcode data-embed-button="media_directories node pdf" data-entity-type="media node">'
       filter_html_help: true
       filter_html_nofollow: false
   filter_html_escape:
