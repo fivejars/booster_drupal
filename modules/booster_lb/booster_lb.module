@@ -85,10 +85,21 @@ function booster_lb_form_alter(array &$form, FormStateInterface $form_state, str
 }
 
 /**
- * Implements hook_preprocess_HOOK().
+ * Implements hook_layout_alter().
  */
-function booster_lb_preprocess_layout(&$variables) {
-  if(empty($variables['settings']['layout_builder_styles_style']['full_width'])) {
-    $variables['attributes']['class'][] = 'container';
+function booster_lb_layout_alter(array &$definitions) {
+  $disabled_layouts = \Drupal::config('booster_lb.settings')->get('disabled_layouts');
+
+  if (empty($disabled_layouts)) {
+    return;
   }
+  $disabled_layouts = array_combine($disabled_layouts, $disabled_layouts);
+  $definitions = array_diff_key($definitions, $disabled_layouts);
+
+  if (empty($definitions['layout_onecol'])) {
+    return;
+  }
+  /** @var \Drupal\Core\Layout\LayoutDefinition $default_layout */
+  $default_layout = &$definitions['layout_onecol'];
+  $default_layout->setLabel(t('Default'));
 }

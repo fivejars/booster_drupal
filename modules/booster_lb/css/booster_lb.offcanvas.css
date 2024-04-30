@@ -3,6 +3,7 @@
   display: block;
   margin-top: 8px !important;
 }
+
 .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
   right: 2rem;
   top: 50%;
@@ -29,7 +30,112 @@
   background-size: contain;
 }
 
-.ui-dialog-content .layout-builder-configure-section fieldset[data-drupal-selector="edit-layout-builder-style-default"] {
+#drupal-off-canvas .layout-builder-configure-section fieldset[data-drupal-selector="edit-layout-builder-style-default"] {
   padding-right: 20px;
   padding-left: 20px;
+}
+
+#drupal-off-canvas .layout-builder-configure-section {
+    color: var(--gin-color-text);
+}
+
+#drupal-off-canvas .layout-builder-configure-section *,
+#drupal-off-canvas .layout-builder-configure-section :not(div) {
+    color: var(--gin-color-text);
+}
+
+#drupal-off-canvas .layout-builder-configure-section .fieldgroup.blb_container_type .fieldset-wrapper > div > div input + label,
+#drupal-off-canvas .layout-builder-configure-section .fieldgroup.blb_gutter_type .fieldset-wrapper > div > div input + label {
+    background-color: var(--gin-bg-layer);
+}
+
+#drupal-off-canvas .layout-builder-configure-section .field-scroll-effects .fieldset-wrapper > div > div input + label,
+#drupal-off-canvas .layout-builder-configure-section .bs-field-box-shadow .fieldset-wrapper > div > div input + label,
+#drupal-off-canvas .layout-builder-configure-section .bs_input-boxes .fieldset-wrapper > div > div input + label,
+#drupal-off-canvas .layout-builder-configure-section .bs_background--type .fieldset-wrapper > div > div input + label,
+#drupal-off-canvas .layout-builder-configure-section .bs_responsive .fieldset-wrapper > div > div input + label,
+#drupal-off-canvas .layout-builder-configure-section .blb_breakpoint_cols label .blb_breakpoint_col {
+    color: var(--gin-color-text);
+    background-color: var(--gin-bg-layer2);
+}
+
+#drupal-off-canvas .layout-builder-configure-section .field-scroll-effects .fieldset-wrapper > div > div input:checked + label,
+#drupal-off-canvas .layout-builder-configure-section .bs-field-box-shadow .fieldset-wrapper > div > div input:checked + label,
+#drupal-off-canvas .layout-builder-configure-section .bs_input-boxes .fieldset-wrapper > div > div input:checked + label,
+#drupal-off-canvas .layout-builder-configure-section .bs_background--type .fieldset-wrapper > div > div input:checked + label,
+#drupal-off-canvas .layout-builder-configure-section .bs_responsive .fieldset-wrapper > div > div input:checked + label {
+    background-color: #41A5FF;
+}
+
+#drupal-off-canvas .layout-builder-configure-section .field-scroll-effects .fieldset-wrapper > div > div input + label:hover,
+#drupal-off-canvas .layout-builder-configure-section .bs-field-box-shadow .fieldset-wrapper > div > div input + label:hover,
+#drupal-off-canvas .layout-builder-configure-section .bs_input-boxes .fieldset-wrapper > div > div input + label:hover,
+#drupal-off-canvas .layout-builder-configure-section .bs_background--type .fieldset-wrapper > div > div input + label:hover,
+#drupal-off-canvas .layout-builder-configure-section .bs_responsive .fieldset-wrapper > div > div input + label:hover,
+#drupal-off-canvas .layout-builder-configure-section .fieldgroup.blb_container_type .fieldset-wrapper > div > div input + label:hover,
+#drupal-off-canvas .layout-builder-configure-section .fieldgroup.blb_gutter_type .fieldset-wrapper > div > div input + label:hover {
+    background-color: var(--gin-color-primary-light-hover);
+}
+
+#drupal-off-canvas .layout-builder-configure-section .bs_tab-pane--appearance details[open] summary,
+#drupal-off-canvas .layout-builder-configure-section .blb_breakpoint_cols label:hover .blb_breakpoint_col {
+    color: var(--gin-color-text);
+    background-color: var(--gin-color-primary-light-hover);
+}
+
+#drupal-off-canvas .layout-builder-configure-section .blb_breakpoint_cols label:hover .bs_tooltip {
+    color: #fff;
+}
+
+#drupal-off-canvas .layout-builder-configure-section .bs_tab-pane--settings details summary.claro-details__summary {
+    padding-left: 2.5rem;
+    background-color: var(--gin-bg-layer2);
+}
+
+#drupal-off-canvas details > summary:after {
+    content: none;
+}
+
+@media (prefers-color-scheme: light) {
+    #drupal-off-canvas .layout-builder-configure-section .bs_tab-pane--appearance details .bs-group-title svg {
+        filter: invert(1);
+    }
+}
+
+#drupal-off-canvas .layout-builder-configure-section .bs_input-boxes--box-model .fieldset-wrapper > div > div input ~ label:after {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+}
+
+#drupal-off-canvas .layout-builder-configure-section .bs_input-boxes .fieldset-wrapper > div > div input + label .input-icon {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    filter: none;
+}
+
+#drupal-off-canvas .layout-builder-configure-section .spacing-preview {
+    padding-bottom: 3rem;
+}
+
+#drupal-off-canvas .layout-builder-configure-section .bs-shadow-preview {
+    max-width: 70%;
+}
+
+#drupal-off-canvas .layout-builder-configure-section .field-scroll-effects .fieldset-wrapper > div > div input + label {
+    width: calc(100% - 26px);
+}
+
+#drupal-off-canvas .layout-builder-configure-section .bs_input-boxes .fieldset-wrapper > div > div input + label,
+#drupal-off-canvas .layout-builder-configure-section .bs-field-box-shadow .fieldset-wrapper > div > div input + label {
+    width: calc(100% - 20px);
+}
+
+#drupal-off-canvas-wrapper .layout-selection > li > a {
+    padding: 1rem;
+}
+
+#drupal-off-canvas-wrapper .layout-selection > li:after {
+    bottom: 0;
 }
