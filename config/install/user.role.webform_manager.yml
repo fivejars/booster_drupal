@@ -23,8 +23,8 @@ dependencies:
     - toolbar
     - webform
     - yoast_seo
-id: webform_admin
-label: 'Webform admin'
+id: webform_manager
+label: 'Webform Manager'
 weight: 3
 is_admin: false
 permissions:
