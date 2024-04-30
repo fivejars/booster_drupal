@@ -61,6 +61,7 @@ install:
   - media_directories_ui
   - media_library
   - metatag
+  - metatag_ai
   - openai
   - openai_ckeditor
   - node

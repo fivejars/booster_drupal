@@ -1,0 +1,4 @@
+metatag_ai:
+  metadata_content_types:
+    page: page
+  metadata_field_id: field_meta_tags
