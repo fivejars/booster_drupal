@@ -53,6 +53,7 @@
         "drupal/media_directories": "^2.1@beta",
         "drupal/memcache": "^2.5",
         "drupal/metatag": "^2.0",
+        "drupal/metatag_ai": "^1.0",
         "drupal/openai": "^1.0@beta",
         "drupal/password_policy": "^4.0",
         "drupal/pathauto": "^1.12",
