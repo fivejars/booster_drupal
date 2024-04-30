@@ -13,6 +13,7 @@
         "drupal/admin_toolbar": "^3.4",
         "drupal/advagg": "^6.0@alpha",
         "drupal/better_exposed_filters": "^6.0",
+        "drupal/bootstrap_layout_builder": "^2.1",
         "drupal/ckeditor_bidi": "^4.0",
         "drupal/ckeditor_find": "^2.0@beta",
         "drupal/ckeditor_font": "^2.0@beta",
@@ -96,7 +97,7 @@
                 "Issue #3380686: Unable to install due to unmet dependencies": "https://www.drupal.org/files/issues/2024-04-23/3380686__13.patch"
             },
             "drupal/entity_browser": {
-                "Issue #2922885 by CHiLi.HH, oknate, l0ke: Provide upload widget for media of media type file": "https://www.drupal.org/files/issues/2019-02-28/entity_browser-media-file-upload-2922885-15.patch",
+                "Issue #2922885: Provide upload widget for media of media type file": "https://www.drupal.org/files/issues/2019-02-28/entity_browser-media-file-upload-2922885-15.patch",
                 "Issue #3104901: Entity Browser used in a entity referenced field of a layout builder custom block is not working": "https://www.drupal.org/files/issues/2024-04-24/3104901-31_0.patch"
             },
             "drupal/layout_builder_browser": {
@@ -112,7 +113,7 @@
                 "3207969 - Positioning of the entity browser is sometimes off": "https://www.drupal.org/files/issues/2023-08-22/3207969-13.patch"
             },
             "drupal/core": {
-                "3075236 - jQuery UI dialog modals repositions incorrectly on window resize when there is a off canvas rendered": "https://www.drupal.org/files/issues/2023-07-18/3075236-39.patch"
+                "Issue #3075236: jQuery UI dialog modals repositions incorrectly on window resize when there is a off canvas rendered": "https://www.drupal.org/files/issues/2023-07-18/3075236-39.patch"
             }
         }
     }
