@@ -304,10 +304,10 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
-              content_editor: '0'
+              contributor: '0'
+              editor: '0'
               administrator: '0'
-              content_moderator: '0'
-              webform_admin: '0'
+              webform_manager: '0'
             placeholder: ''
           is_grouped: false
           group_info:
