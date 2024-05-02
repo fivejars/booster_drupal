@@ -1,3 +1,7 @@
 .glb-layout-builder-browser .glb-list a {
   width: auto;
 }
+
+#layout-builder-modal .form-type-search input.form-search {
+  color: var(--bs-body-color);
+}
