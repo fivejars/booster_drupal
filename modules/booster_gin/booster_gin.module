@@ -1,0 +1,19 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Provides related to booster_gin module customization.
+ */
+
+/**
+ * Implements hook_library_info_alter().
+ */
+function booster_gin_library_info_alter(array &$libraries, string $extension) {
+  if ($extension !== 'gin') {
+    return;
+  }
+
+  $libraries['entity_browser']['dependencies'][] = 'booster_gin/entity_browser';
+}

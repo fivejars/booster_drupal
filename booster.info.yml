@@ -1,9 +1,9 @@
-name: StarterKit
+name: Booster
 type: profile
-description: 'FiveJars StarterKit'
+description: 'FiveJars Booster Distribution'
 core_version_requirement: ~10
 distribution:
-  name: StarterKit
+  name: Booster
 
 install:
   - action
@@ -88,8 +88,8 @@ install:
   - simple_recaptcha
   - site_verify
   - sitemap
-  - starterkit_gin
-  - starterkit_lb
+  - booster_gin
+  - booster_lb
   - system
   - ultimate_cron
   - user

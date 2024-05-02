@@ -1,4 +1,0 @@
-entity_browser:
-  css:
-    theme:
-      css/starterkit_gin.entity_browser.css: {}
