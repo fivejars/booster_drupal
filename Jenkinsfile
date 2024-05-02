@@ -4,14 +4,14 @@ pipeline {
   agent {
     node {
       label 'slave'
-      customWorkspace 'builds/dskit/dskit-' + env.BRANCH_NAME
+      customWorkspace 'builds/booster_drupal/booster_drupal-' + env.BRANCH_NAME
     }
   }
   environment {
-    VIRTUAL_HOST = "${BRANCH_NAME.toLowerCase()}.dskit.${VIRTUAL_HOST_BASE}"
+    VIRTUAL_HOST = "${BRANCH_NAME.toLowerCase()}.booster.drupal.${VIRTUAL_HOST_BASE}"
     BUILD_URL = "http://${VIRTUAL_HOST}/"
-    DEFAULT_THEME = "drupal_starterkit_theme"
-    COMMENT_URL = "https://api.github.com/repos/fivejars/drupal_starterkit/issues/${CHANGE_ID}/comments"
+    DEFAULT_THEME = "booster_theme"
+    COMMENT_URL = "https://api.github.com/repos/fivejars/booster_drupal/issues/${CHANGE_ID}/comments"
   }
   stages {
       stage('Checkout') {
@@ -20,12 +20,12 @@ pipeline {
               checkout poll: false,
                   scm: [
                       $class: 'GitSCM',
-                      branches: [[name: '*/master']],
+                      branches: [[name: '*/1.x']],
                       extensions: [
                           [$class: 'CheckoutOption']
                       ],
                       userRemoteConfigs: [[
-                          url: 'https://github.com/fivejars/drupal_starterkit_docksal.git'
+                          url: 'https://github.com/fivejars/booster_drupal_docksal.git'
                       ]]
                   ]
               sh 'echo "VIRTUAL_HOST=\"$VIRTUAL_HOST\"" > .docksal/docksal-local.env'

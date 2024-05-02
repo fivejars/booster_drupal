@@ -1,0 +1,11 @@
+modal:
+  css:
+    theme:
+      css/booster_lb.offcanvas.css: {}
+      css/booster_lb.modal.css: {}
+
+form:
+  css:
+    theme:
+      css/booster_lb.offcanvas.css: {}
+      css/booster_lb.form.css: {}

@@ -1,9 +1,9 @@
 {
-    "name": "fivejars/drupal_starterkit",
-    "description": "FiveJars StarterKit distribution",
+    "name": "fivejars/booster_drupal",
+    "description": "Booster Drupal distribution",
     "license": "GPL-2.0-or-later",
     "type": "drupal-profile",
-    "version": "dev-master",
+    "version": "1.x-dev",
     "require": {
         "php": ">=8.2",
         "composer/installers": "^2.2",
@@ -89,7 +89,7 @@
     },
     "extra": {
         "enable-patching": true,
-        "installer-name": "starterkit",
+        "installer-name": "booster",
         "patches": {
             "drupal/ckeditor_media_resize": {
                 "Issue #3380686: Unable to install due to unmet dependencies": "https://www.drupal.org/files/issues/2024-04-23/3380686__13.patch"

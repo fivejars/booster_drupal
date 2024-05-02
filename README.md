@@ -1,6 +1,6 @@
-# FiveJars StarterKit Distribution
+# Booster Drupal Distribution
 
-The main task of the Distribution project is to streamline the website
+The main task of the Booster Distribution project is to streamline the website
 development process by providing developers with a comprehensive distribution
 that includes pre-configured components as foundational elements.
 
@@ -31,4 +31,4 @@ For further information, see [Installing Drupal](https://www.drupal.org/docs/get
 
 ## Maintainers
 
-- [Oleksandr Riumshyn] - [Oleksandr Riumshyn](https://github.com/OleksandrRiumshyn)
+Sponsored and developed by [Five Jars](https://www.drupal.org/five-jars).
