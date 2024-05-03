@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - media
     - sitemap
     - system
 id: anonymous
@@ -11,3 +12,4 @@ is_admin: false
 permissions:
   - 'access content'
   - 'access sitemap'
+  - 'view media'
