@@ -10,13 +10,13 @@ declare(strict_types=1);
 /**
  * Implements hook_install().
  */
-function booster_lb_install() {
+function booster_lb_install(): void {
   module_set_weight('booster_lb', 10);
 }
 
 /**
  * Modify module weight so that it runs after others.
  */
-function booster_lb_update_8001() {
+function booster_lb_update_8001(): void {
   module_set_weight('booster_lb', 10);
 }

@@ -14,7 +14,7 @@ use Drupal\Core\Form\FormStateInterface;
  */
 function booster_lb_theme_suggestions_alter(array &$suggestions, array $variables): void {
   // If gin setup suggestions on Boostrap styles, remove them.
-  if (!isset($variables['element']['#gin_lb_form'])) {
+  if (empty($variables['element']['#gin_lb_form'])) {
     return;
   }
 
@@ -22,7 +22,7 @@ function booster_lb_theme_suggestions_alter(array &$suggestions, array $variable
     // Search bootstrap styles suggestions.
     if (
       str_contains($suggestion, '__bs')
-      || (str_contains($suggestion, 'label') && isset($variables['element']['#bs']))
+      || (str_contains($suggestion, 'label') && !empty($variables['element']['#bs']))
     ) {
       $suggestions = preg_grep("/__gin_lb/", $suggestions, PREG_GREP_INVERT);
       return;
@@ -87,8 +87,10 @@ function booster_lb_form_alter(array &$form, FormStateInterface $form_state, str
 /**
  * Implements hook_layout_alter().
  */
-function booster_lb_layout_alter(array &$definitions) {
-  $disabled_layouts = \Drupal::config('booster_lb.settings')->get('disabled_layouts');
+function booster_lb_layout_alter(array &$definitions): void {
+  /** @var array<string> $disabled_layouts */
+  $disabled_layouts = (array) \Drupal::config('booster_lb.settings')
+    ->get('disabled_layouts');
 
   if (empty($disabled_layouts)) {
     return;
